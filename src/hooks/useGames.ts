@@ -1,6 +1,3 @@
-import { useEffect, useState } from "react";
-import apiClient from "../services/api-client";
-import { CanceledError } from "axios";
 import useData from "./useData";
 
 export interface Platfrom {
@@ -22,6 +19,6 @@ interface FetchGameResponse {
   results: Game[];
 }
 
-const useGames = () => useData<Game>("/game");
+const useGames = () => useData<Game>("/games");
 
 export default useGames;
