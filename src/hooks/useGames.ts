@@ -4,8 +4,9 @@ import useData from "./useData";
 export interface Platfrom {
   id: number;
   name: string;
-  background_image: string;
+  // background_image: string;
   slug: string;
+  // image_background: string;
 }
 export interface Game {
   id: number;
@@ -14,11 +15,6 @@ export interface Game {
   parent_platforms: { platform: Platfrom }[];
   metacritic: number;
   rating_top: number;
-}
-
-interface FetchGameResponse {
-  count: number;
-  results: Game[];
 }
 
 const useGames = (gameQuery: GameQuery) =>

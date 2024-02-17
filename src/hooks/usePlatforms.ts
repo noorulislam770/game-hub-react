@@ -1,9 +1,4 @@
 import parentPlatforms from "../data/parentPlatforms";
-interface Platform {
-  id: number;
-  name: string;
-  slug: string;
-}
 
 const usePlatfroms = () => ({
   data: parentPlatforms,
